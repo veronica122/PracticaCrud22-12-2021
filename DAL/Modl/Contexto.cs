@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Modelo
+namespace DAL.Modl
 {
     public class Contexto : DbContext
     {

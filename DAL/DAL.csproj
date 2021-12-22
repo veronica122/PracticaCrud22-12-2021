@@ -51,13 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modelo\Contexto.cs" />
-    <Compile Include="Modelo\Persona.cs" />
+    <Compile Include="Migrations\202112221512489_inicial.cs" />
+    <Compile Include="Migrations\202112221512489_inicial.designer.cs">
+      <DependentUpon>202112221512489_inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Modl\Contexto.cs" />
+    <Compile Include="Modl\Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202112221512489_inicial.resx">
+      <DependentUpon>202112221512489_inicial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
